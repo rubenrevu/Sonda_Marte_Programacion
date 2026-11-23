@@ -17,7 +17,7 @@ def ajuste_minimo_cuadrado (voltage, presion):
   pendiente = (n*suma_VP - suma_V * suma_P)/(n*suma_V2 - suma_V**2)
   ordenada = (suma_P - pendiente * suma_V)/n
   
-  return true
+  return pendiente, ordenada
 
 def integracion_trapecio:
   return true
