@@ -19,8 +19,22 @@ def ajuste_minimo_cuadrado (voltage, presion):
   
   return pendiente, ordenada
 
-def integracion_trapecio:
-  return true
+def calcular_altitud(t_vuelo, v_vuelo):
+
+   
+    dt = t_vuelo[1:] - t_vuelo[:-1]
+
+    
+    v_media = (v_vuelo[1:] + v_vuelo[:-1]) / 2
+
+    
+    areas = v_media * dt
+
+    
+    h_vuelo = np.zeros(len(t_vuelo))
+    h_vuelo[1:] = np.cumsum(areas)
+
+    return h_vuelo
 
 def interpolacion:
   return true
