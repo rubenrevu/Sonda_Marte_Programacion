@@ -1,4 +1,4 @@
-# Sonda_Marte_Programacion
+# Sonda_Marte_Programacion Grupo 12
 
 6. Análisis telemétrico y aerodinámico del lanzamiento de una sonda a Marte
 
