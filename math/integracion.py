@@ -1,4 +1,4 @@
-##En este archivo tenemos los metodos de integracion numerica
+##integracion numerica
 import numpy as np
 #Por trapecios
 
@@ -7,10 +7,10 @@ def my_trapecio (f,a,b): #De datos requiere una funcion, un inicio y un final (e
     if n < 1:
         raise ValueError("El intervlo para integrar es mas pequeño que el ancho de nuestro trapecio") 
     #Sacamos los puntos en el eje x para cada trapecio
-    x = a + dx * np.arange(n+1) #CAMBIAR 0.001 
+    x = a + dx * np.arange(n+1) #CAMBIAR dx 
     y = f(x) #Sacams la altura de cada trapecio
     #Aplicamos la formula
-    return (dx / 2) * (y[0] + 2 * np.sum(y[1:-1]) + y[-1])  #CAMBIAR 0.001
+    return (dx / 2) * (y[0] + 2 * np.sum(y[1:-1]) + y[-1])  #CAMBIAR dx
 
 
 #Por simpson
